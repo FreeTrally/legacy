@@ -14,18 +14,17 @@
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
     <PackageReference Include="log4net" Version="2.0.12" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.0" />
-    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
     <PackageReference Include="StatePrinter" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="DoNotOpen\**" />
-    <Compile Remove="Solved\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="DoNotOpen\**" />
-    <None Remove="Solved\**" />
   </ItemGroup>
 
 </Project>

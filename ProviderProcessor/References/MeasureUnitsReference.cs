@@ -6,6 +6,11 @@ namespace ProviderProcessing.References
     {
         private static MeasureUnitsReference instance;
 
+        internal static void SetInstance(MeasureUnitsReference newInstance)
+        {
+            instance = newInstance;
+        }
+
         public static MeasureUnitsReference GetInstance()
         {
             return instance ?? (instance = LoadReference());
@@ -16,11 +21,10 @@ namespace ProviderProcessing.References
             throw new NotImplementedException("Долгая-долгая инициализация справочника.");
         }
 
-        public MeasureUnit FindByCode(string measureUnitCode)
+        public virtual MeasureUnit FindByCode(string measureUnitCode)
         {
             throw new NotImplementedException("Работа со справочником");
         }
-
         // Прочие методы
     }
 }

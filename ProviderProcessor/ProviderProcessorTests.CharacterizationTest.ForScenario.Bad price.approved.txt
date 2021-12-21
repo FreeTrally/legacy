@@ -1,0 +1,2 @@
+Success: False, Error: Product validation errors, Most Critical Message:
+Bad price

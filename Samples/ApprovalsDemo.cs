@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
+using ApprovalTests;
+using ApprovalTests.Reporters;
 using Newtonsoft.Json;
 using NUnit.Framework;
 
 namespace Samples
 {
     [TestFixture]
+    [UseReporter(typeof(DiffReporter))]
     public class ApprovalsDemo
     {
         [Test]
@@ -14,7 +17,7 @@ namespace Samples
         {
             var puzzle15 = new Puzzle15();
             // TODO: assert
-            // HINT: Approvals.Verify
+            Approvals.Verify(puzzle15);
         }
 
         #region Как это работает
